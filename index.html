@@ -1,0 +1,548 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnezhinWebDev</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/smooth-scrollbar.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+
+    <div class="page-loader">
+        <div class="bounceball"></div>
+    </div>
+
+    <span class="icon-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div class="global-color">
+        <span class="setting-toggle">
+            <i class="las la-cog"></i>
+        </span>
+        <div class="inner">
+            <div class="overlay"></div>
+            <div class="global-color-option">
+                <span class="close-settings">
+                    <i class="las la-times"></i>
+                </span>
+                <h2>Конфигурация</h2>
+                <div class="global-color-option-inner">
+                    <p>Цвета</p>
+                    <div class="color-boxed">
+                        <a href="#" class="clr-active" onclick="color1();"></a>
+                        <a href="#" onclick="color2();"></a>
+                        <a href="#" onclick="color3();"></a>
+                        <a href="#" onclick="color4();"></a>
+                        <a href="#" onclick="color5();"></a>
+                        <a href="#" onclick="color6();"></a>
+                        <a href="#" onclick="color7();"></a>
+                        <a href="#" onclick="color8();"></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive-sidebar-menu">
+        <div class="overlay"></div>
+        <div class="sidebar-menu-inner">
+            <div class="menu-wrap">
+                <p>Меню</p>
+                <ul class="menu scroll-nav-responsive d-flex">
+                    <li>
+                        <a class="scroll-to" href="#home">
+                            <i class="las la-home"></i> <span>Дом</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#about">
+                            <i class="lar la-user"></i> <span>Обо мне</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#resume">
+                            <i class="las la-briefcase"></i> <span>Резюме</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#services">
+                            <i class="las la-stream"></i> <span>Специализация</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#skills">
+                            <i class="las la-shapes"></i> <span>Навыки</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#portfolio">
+                            <i class="las la-grip-vertical"></i> <span>Портфолио</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+
+            <div class="sidebar-social">
+                <p>Социальные сети</p>
+                <ul class="social-links d-flex align-items-center">
+                    <li>
+                        <a href=""><i class="lab la-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="lab la-dribbble"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="lab la-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul class="menu scroll-nav d-flex">
+        <li>
+            <a class="scroll-to" href="#home">
+                <span>Home</span> <i class="las la-home"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#about">
+                <span>About</span> <i class="lar la-user"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#resume">
+                <span>Resume</span> <i class="las la-briefcase"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#services">
+                <span>Services</span> <i class="las la-stream"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#skills">
+                <span>Skills</span> <i class="las la-shapes"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#portfolio">
+                <span>Portfolios</span> <i class="las la-grip-vertical"></i>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="left-sidebar">
+        <div class="sidebar-header d-flex align-items-center justify-content-between">
+            <img class="left-sidebar_logo" src="images/Logo (3).png" alt="Logo">
+            <span class="designation">Kirill Snezhin </span>
+        </div>
+        <img class="me" src="images/nVRraPfa0Ko (1).jpg" alt="Me">
+        <h2 class="email"></h2>
+        <h2 class="address">Калининград</h2>
+        <p class="copyright">02.05.1999</p>
+        <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+            <li>
+                <a href=""><i class="lab la-twitter"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="lab la-dribbble"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="lab la-instagram"></i></a>
+            </li>
+            
+        </ul>
+        <a href="#" class="theme-btn">
+            <i class="las "></i> 
+        </a>
+    </div>
+
+    <main class="drake-main">
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <div class="left-sidebar">
+                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+                        <img src="images/Logo (3).png" alt="Logo">
+                        <span class="designation">Web-Developer</span>
+                    </div>
+                    <img class="me" src="images/me.jpg" alt="Me">
+                    <h2 class="email">snezhin.kirill@yandex.ru</h2>
+                    <h2 class="address">Живу в Калининграде</h2>
+                   
+                    <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                        <li>
+                            <a href=""><i class="lab la-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-github"></i></a>
+                        </li>
+                    </ul>
+                   
+                </div>
+
+                <section class="hero-section page-section scroll-to-page" id="home">
+
+                    <div class="custom-container">
+                        <div class="hero-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-home"></i> Представляем
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Привет, я <span>Кирилл Снежин</span>  Designer and Developer</h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">Я разрабатываю и кодирую прекрасные простые вещи, и мне нравится то, что я делаю. Вот так просто!</p>
+                            <a href="#portfolio" class="go-to-project-btn scroll-to scroll-animation" data-animation="rotate_up">
+                                <img src="images/round-text.png" alt="Rounded Text">
+                                <i class="las la-arrow-down"></i>
+                            </a>
+        
+                     
+        
+                <section class="about-area page-section scroll-to-page" id="about">
+                    <div class="custom-container">
+                        <div class="about-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-user"></i> Обо мне
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Каждый великий сайт начинается <br>с
+                                    еще <br>    <span>лучшей истории</span></h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">Пожалуй еще раз представлюсь, меня зовут Кирилл -  я самоучка из Калининграда. Учился в 49 лицее 
+                                и затем поступил в Калининградский бизнес-колледж на специальность рекламщика. Там я освоил работу в таких программах, как Photoshop, Illustrator, 
+                                Figma, Sketch, Adobe Xd, Premier Pro, а также научился создавать продающие сайты на конструкторах Tilda и Wix. 
+                                После окончания колледжа устроился работать в Яндекс оператором технической поддержки и начал изучать разработку сайтов. 
+                                Хорошо освоил языки HTML, CSS, JavaScript, а также на базовом уровне овладел PHP и SQL. Кроме того, я познакомился 
+                                с библиотекой React. Сейчас мой путь в веб-разработке только начинается, но мне кажется, что у меня все получится.</p>
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="resume-area page-section scroll-to-page" id="resume">
+                    <div class="custom-container">
+                        <div class="resume-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-briefcase"></i> Резюме
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Образование &amp; <span>опыт</span></h1>
+                            </div>
+        
+                            <div class="resume-timeline">
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">2022 - Present</span>
+                                    <h2>Самоучка-разработчик</h2>
+                                    <p></p>
+                                    <h2>Оператор технической поддержки-операционист</h2>
+                                    <p>Yandex</p>
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">2019 - 2022</span>
+                                    <h2>Студент-рекламист</h2>
+                                    <p>Калининградский бизнес-колледж</p>
+                                    
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">2006 - 2017</span>
+                                    <h2>Ученик</h2>
+                                    <p>49 лицей города Калининграда</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="services-area page-section scroll-to-page" id="services">
+                    <div class="custom-container">
+                        <div class="services-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-stream"></i> Услуги
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Моя <span>Специализация</span></h1>
+                            </div>
+        
+                            <div class="services-items">
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-bezier-curve"></i>
+                                    <h2>Website Design</h2>
+                                    <p>Я создаю цифровые продукты с уникальными идеями, используя Figma &amp; Tilda</p>
+                                    
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-code"></i>
+                                    <h2>Development</h2>
+                                    <p>I build website go live with Framer, Webflow or WordPress</p>
+                                
+                                </div>
+                           
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="skills-area page-section scroll-to-page" id="skills">
+                    <div class="custom-container">
+                        <div class="skills-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-shapes"></i> мои навыки
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Мои <span>Преимущества</span></h1>
+                            </div>
+        
+                            <div class="row skills text-center">
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/figma.png" alt="Figma">
+                                            <h1 class="percent">92%</h1>
+                                        </div>
+                                        <p class="name">HTML</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/framer.png" alt="Framer">
+                                            <h1 class="percent">85%</h1>
+                                        </div>
+                                        <p class="name">CSS</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/webflow.png" alt="Webflow">
+                                            <h1 class="percent">80%</h1>
+                                        </div>
+                                        <p class="name">JavaScript</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/react.png" alt="React">
+                                            <h1 class="percent">90%</h1>
+                                        </div>
+                                        <p class="name">React</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/wordpress.png" alt="WordPress">
+                                            <h1 class="percent">86%</h1>
+                                        </div>
+                                        <p class="name">Tilda</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/laravel.png" alt="Laravel/PHP">
+                                            <h1 class="percent">70%</h1>
+                                        </div>
+                                        <p class="name">Figma</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="portfolio-area page-section scroll-to-page" id="portfolio">
+                    <div class="custom-container">
+                        <div class="portfolio-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-grip-vertical"></i> portfolio
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Featured <span>Projects</span></h1>
+                            </div>
+        
+                            <div class="row portfolio-items">
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-full">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio1.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio1.jpg" alt="Portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">Figma</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Framer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">WordPress</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">Bureau - Architecture Studio Website</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio2.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio2.jpg" alt="Portfolio">
+                                            </a>
+
+                                            <img src="images/portfolio2.jpg" alt="Portfolio">
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">WordPress</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Larevel/PHP</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">Moonex WordPress Theme</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio3.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio3.jpg" alt="Portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">Figma</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Webflow</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">Taskly Dashboard</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio4.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio4.jpg" alt="portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">Figma</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">React</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">Hinterland - Real Estate Site Redesign</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio5.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio5.jpg" alt="portfolio">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">Framer</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">Lewis Portfolio Framer Template</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+        
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+              
+                        </div>
+                    </div>
+                </section>
+
+
+                
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/color.js"></script>
+
+
+</body></html>
